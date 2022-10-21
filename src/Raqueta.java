@@ -16,19 +16,19 @@ public class Raqueta {
     }
 
     public void moverR1(Rectangle limites) {
-        if (EventoTeclado.w && y > limites.getMinY()) {
+        if (Controles.w && y > limites.getMinY()) {
             y--;
         }
-        if (EventoTeclado.s && y < limites.getMaxY()-ALTO) {
+        if (Controles.s && y < limites.getMaxY()-ALTO) {
             y++;
         }
     }
 
     public void moverR2(Rectangle limites) {
-        if (EventoTeclado.up && y > limites.getMinY()) {
+        if (Controles.i && y > limites.getMinY()) {
             y--;
         }
-        if (EventoTeclado.down && y < limites.getMaxY()-ALTO) {
+        if (Controles.k && y < limites.getMaxY()-ALTO) {
             y++;
         }
     }

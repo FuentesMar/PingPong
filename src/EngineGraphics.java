@@ -15,7 +15,7 @@ public class EngineGraphics extends Thread {
                 //Paint Velocity 
                 Thread.sleep(6);
             } catch (Exception ex) {
-                System.out.println("error in graphics engine: " + ex.getMessage());
+                System.out.println("error con graphics engine: " + ex.getMessage());
             }
         }
     }

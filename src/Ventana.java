@@ -13,7 +13,7 @@ public class Ventana extends JFrame {
         canvas = new Tablero();
         add(canvas);
 
-        addKeyListener(new EventoTeclado());
+        addKeyListener(new Controles());
         new EngineGraphics(canvas).start();
     }
 

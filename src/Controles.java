@@ -1,9 +1,10 @@
 
 import java.awt.event.*;
 
-public class EventoTeclado extends KeyAdapter {
+public class Controles extends KeyAdapter {
 
-    static boolean w, s, up, down;
+    static boolean i, k;
+    static boolean w, s;
 
     @Override
     public void keyPressed(KeyEvent e) {
@@ -17,11 +18,11 @@ public class EventoTeclado extends KeyAdapter {
             s = true;
 
         }
-        if (id == KeyEvent.VK_UP) {
-            up = true;
+        if (id == KeyEvent.VK_I) {
+            i = true;
         }
-        if (id == KeyEvent.VK_DOWN) {
-            down = true;
+        if (id == KeyEvent.VK_K) {
+            k = true;
         }
     }
 
@@ -35,11 +36,11 @@ public class EventoTeclado extends KeyAdapter {
         if (id == KeyEvent.VK_S) {
             s = false;
         }
-        if (id == KeyEvent.VK_UP) {
-            up = false;
+        if (id == KeyEvent.VK_I) {
+            i = false;
         }
-        if (id == KeyEvent.VK_DOWN) {
-            down = false;
+        if (id == KeyEvent.VK_K) {
+            k = false;
         }
     }
 
